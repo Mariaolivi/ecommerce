@@ -15,7 +15,7 @@
         <div class="col">
             <form>
                 <label for="numero">Número</label>
-                <input type="text" id="numero" class="form-control mb-3" placeholder="Ex: 0000 0000 0000 0000">
+                <input type="text" id="numero" onkeyup="alteraBandeira()" class="form-control mb-3" placeholder="Ex: 0000 0000 0000 0000">
                 <label for="titular">Titular</label>
                 <input type="text" id="numero" class="form-control mb-3" placeholder="Ex: Carlos Antônio">
                 <div class="row">
@@ -42,7 +42,9 @@
         </div>
         <div class="col">
             <div id="frente" class="card card-body bg-dark h-75 text-white" >
-                <div class="text-end" id="bandeira">Bandeira</div>
+                <div class="text-end" id="bandeira">
+                    <img src="assets/imgs/visa.svg" style="width: 60px;">
+                </div>
                 <div style="margin-top: 60px;">
                     <i class="fa-solid fa-microchip" style="color: #ffffff;"></i>
                 </div>
@@ -55,9 +57,10 @@
                 </div>
             </div>
             <div id="verso" class="card card-body bg-dark h-75 text-white">
-               
+               <div class="mt-5" id="card-cvv" style="">000</div>
             </div>
         </div>
     </section>
+    <script src="card.js"></script>
 </body>
 </html>
