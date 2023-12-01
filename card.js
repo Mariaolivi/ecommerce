@@ -10,3 +10,65 @@ function alteraBandeira() {
         bandeira.innerHTML = 'Bandeira'
     }
  }
+
+ let mes = document.getElementById('mes');
+
+ let meses = [
+{   
+    'id': '01',
+    'name': 'Janeiro'
+},
+{
+    'id': '02',
+    'name': 'Fevereiro'
+},
+{
+    'id': '03',
+    'name': 'Março'
+},
+{
+    'id': '04',
+    'name': 'Abril'
+},
+{
+    'id': '05',
+    'name': 'Maio'
+},
+{
+    'id': '06',
+    'name': 'Junho'
+},
+{
+    'id': '07',
+    'name': 'Junho'
+},
+{
+    'id': '08',
+    'name': 'Agosto'
+},
+{
+    'id': '09',
+    'name': 'Setembro'
+},
+{
+    'id': '10',
+    'name': 'Outubro'
+},
+{
+    'id': '11',
+    'name': 'Novembro'
+},
+{
+    'id': '12',
+    'name': 'Dezembro'
+}
+
+ ]
+   
+ 
+
+ for (let i = 0; i <= 12; i++) {
+    mes.innerHTML += `<option value=0${meses[i].id}>${meses[i].name}</option>`
+    
+ }
+
